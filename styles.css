@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 :root {
     --distance: 100px; /* Valor predeterminado para la distancia */
     --distanceX: 100px; /* Valor predeterminado para la distancia en el eje X */

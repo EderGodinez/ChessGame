@@ -1,0 +1,14 @@
+{
+  "name": "gamechess",
+  "version": "1.0.0",
+  "description": "Creacion de juego de ajedrez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eder Yair Godinez Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.10.7"
+  }
+}

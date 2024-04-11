@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --distance: 100px; /* Valor predeterminado para la distancia */
+    --distanceX: 100px; /* Valor predeterminado para la distancia en el eje X */
+    --distanceY: 100px; /* Valor predeterminado para la distancia en el eje Y */
+  }
+
+.row:nth-child(even) > .box:nth-child(odd){
+    /* color: white; */
+    background-color: rgb(83, 77, 77);
+
+}
+
+.row:nth-child(odd) > .box:nth-child(even) {
+    /* color: white; */
+    background-color: rgb(83, 77, 77);
+}
+.box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    border: 1px rgb(105, 102, 102);
+    width: 12.5%;
+   height: 100%;
+}
+.box:not(:empty):hover {
+cursor: pointer;
+}
+.row{
+    display: flex;
+    width: 100%;
+    height: 12.5%;
+}
+.button_slide {
+color: #FFF;
+border: 2px solid #fcff68cb;
+border-radius: 0px;
+padding: 18px 36px;
+display: inline-block;
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 14px;
+letter-spacing: 1px;
+cursor: pointer;
+box-shadow: inset 0 0 0 0 #fcff68cb;
+-webkit-transition: ease-out 0.4s;
+-moz-transition: ease-out 0.4s;
+transition: ease-out 0.4s;
+}
+.slide_left:hover {
+color: black;
+box-shadow: inset 0 0 0 50px #fcff68cb;
+}
+@keyframes moveX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(var(--distance)); 
+    }
+}
+
+/* Animación para mover en el eje Y */
+@keyframes moveY {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(var(--distance));
+    }
+}
+
+/* Animación para mover en diagonal */
+@keyframes moveDiagonal {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(var(--distanceX), var(--distanceY)); 
+    }
+}

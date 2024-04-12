@@ -1,6 +1,9 @@
 # ChessGame
 
 Este proyecto esta construido en javascript vanilla , con el uso de tailwin para los estilos, se respetan la mayoria de las reglas del ajedrez
+
+##URL publica 
+[https://chessgamemx.netlify.app/]Chessgame
 ## Autor
 
 - [@EderGodinez](https://github.com/EderGodinez)
